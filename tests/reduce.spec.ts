@@ -21,23 +21,23 @@ describe('Reduce class tests', () => {
     });
   });
   describe('AddReduce class tests', () => {
-    it('addRed.reduce() should return 10', () => {
-      expect(addRed.reduce()).to.equal(10);
+    it('addRed.run() should return 10', () => {
+      expect(addRed.run()).to.equal(10);
     });
   });
   describe('SubReduce class tests', () => {
-    it('subRed.reduce() should return 3', () => {
-      expect(subRed.reduce()).to.equal(3);
+    it('subRed.run() should return 3', () => {
+      expect(subRed.run()).to.equal(3);
     });
   });
   describe('ProdReduce class tests', () => {
-    it('prodRed.reduce() should return 8', () => {
-      expect(prodRed.reduce()).to.equal(8);
+    it('prodRed.run() should return 8', () => {
+      expect(prodRed.run()).to.equal(8);
     });
   });
   describe('DivReduce class tests', () => {
-    it('divRed.reduce() should return 25', () => {
-      expect(divRed.reduce()).to.equal(25);
+    it('divRed.run() should return 25', () => {
+      expect(divRed.run()).to.equal(25);
     });
   });
 });

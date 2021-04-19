@@ -28,4 +28,12 @@ export class ProdReduce extends Reduce {
     this.getNumbers().forEach((num) => result *= num);
     return result;
   }
+  /**
+   * @description Hook executed before the reduce
+   */
+  beforeReduce(): void { }
+  /**
+   * @description Hook executed after the reduce
+   */
+  afterReduce(): void {}
 }

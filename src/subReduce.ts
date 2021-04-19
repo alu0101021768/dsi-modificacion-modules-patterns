@@ -29,5 +29,13 @@ export class SubReduce extends Reduce {
     allExceptFirst.forEach((num) => result -= num);
     return result;
   }
+  /**
+   * @description Hook executed before the reduce
+   */
+  beforeReduce(): void { }
+  /**
+   * @description Hook executed after the reduce
+   */
+  afterReduce(): void {}
 }
 

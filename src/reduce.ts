@@ -24,10 +24,27 @@ export abstract class Reduce {
     return this.numbers;
   }
   /**
+   * @description Template method that defines the reduce method
+   */
+  public run(): number {
+    this.beforeReduce();
+    const result = this.reduce();
+    this.afterReduce();
+    return result;
+  }
+  /**
    * @description Abstract method reduce that must be implemented by inherited
    * classes. This method will have a custom behaviour depending on the class
    * that implements it
    * @return Returns a number resulting of the reduce
    */
   protected abstract reduce(): number;
+  /**
+   * @description Hook executed before the reduce
+   */
+  protected abstract beforeReduce(): void;
+  /**
+   * @description Hook executed after the reduce
+   */
+  protected abstract afterReduce(): void;
 }

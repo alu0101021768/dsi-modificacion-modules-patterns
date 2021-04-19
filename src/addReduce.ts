@@ -28,5 +28,13 @@ export class AddReduce extends Reduce {
     this.numbers.forEach((num) => result += num);
     return result;
   }
+  /**
+   * @description Hook executed before the reduce
+   */
+  beforeReduce(): void { }
+  /**
+   * @description Hook executed after the reduce
+   */
+  afterReduce(): void {}
 }
 
